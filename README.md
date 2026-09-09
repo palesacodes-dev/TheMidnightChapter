@@ -7,7 +7,7 @@
 ## Student Information
 * **Student Name**: Palesa S'phesihle Ngcobo
 * **Student Number**: ST10104545
-* **Institution**: Rosebank College Nelspruit
+* **Institution**: Rosebank International, Mbombela Campus
 * **Course/Module**: Diploma in Information Technology in Software Development
 * **Submission Date**: 18 September 2026
 
