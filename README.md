@@ -1,32 +1,56 @@
-# The Midnight Chapter 24/7 Book & Study Cafe 
+# The Midnight Chapter 24/7 Book & Study Cafe
 
-**Student Name:** Palesa S'phesihle Ngcobo  
-**Student Number:** ST10104545  
-**Module Name:** Web Development (Introduction)  
-**Module Code:** WEDE5020  
-**Deliverable:** Portfolio of Evidence (PoE) Part 1  
+> An atmospheric, responsive web application for a 24/7 study cafe and artisanal coffee shop tailored for students, developers, and late night focus sessions.
+
+---
+
+## Student Information
+* **Student Name**: Palesa S'phesihle Ngcobo
+* **Student Number**: ST10104545
+* **Institution**: Rosebank College Nelspruit
+* **Course/Module**: Diploma in Information Technology in Software Development
+* **Submission Date**: 18 September 2026
 
 ---
 
 ## Project Overview
-**The Midnight Chapter** is a 24/7 study cafe designed to solve the late-night study crisis for university students, software developers, and researchers. The platform provides an intuitive interface to view real time amenity information, browse daily passes and monthly memberships, view 24/7 cafe offerings, and submit online study pod reservation requests.
+"The Midnight Chapter" is a digital front end web application created to address the growing demand among university students and software developers for structured, quiet, and reliable late night study spaces. Operating on a 24/7 model with uninterrupted solar backup power and high speed fiber internet, the platform allows users to explore the study space, browse menu offerings, check pod availability, and submit pod reservation inquiries seamlessly.
 
 ---
 
-## Tech Stack & Requirements
-* **HTML5:** Semantic site structure (`index.html`, `about.html`, `products.html`, `enquiry.html`, `contact.html`).
-* **CSS3:** Custom responsive layout and styling (Part 2 focus).
-* **JavaScript:** Form validation and client-side interactivity (Part 3 focus).
-* **Hosting:** GitHub Pages[cite: 1].
+##  Website Goals and Objectives
+* **Primary Goal**: To provide an intuitive, high end digital hub where students and developers can explore services, review cafe offerings, and reserve study pods online.
+* **Objective 1**: Deliver a fully responsive, mobile first user interface using CSS Grid and Flexbox that adapts across desktop, tablet, and mobile screens.
+* **Objective 2**: Implement an interactive, functional enquiry system integrated with the Formspree API for real time pod reservations.
+* **Objective 3**: Maintain visual identity standards with high contrast luxury typography (*Playfair Display* and *Plus Jakarta Sans*) and high legibility UI components.
 
 ---
 
-##  Repository File Structure
-```text
-TheMidnightChapter/
-├── index.html       # Homepage (Opening details, hero section & highlights)
-├── about.html       # About Us (Cafe story, mission, vision & security details)
-├── products.html    # Menu & Services (Pass pricing & 24/7 cafe menu)
-├── enquiry.html     # Enquiry & Booking Form (Pod reservation request form)
-├── contact.html     # Contact Details (Downtown & Campus branch information)
-└── README.md        # Project documentation
+## Key Features and Functionality
+* **Atmospheric Hero Banner**: Features a dark tinted overlay over luxury marble interior imagery with crisp, readable white typography.
+* **Interactive Pod Enquiry Form**: Integrated enquiry section utilizing Formspree API for direct study pod booking submissions.
+* **Vanilla Oat Latte Design System**: Custom cohesive color scheme (`#F7F4EF` base with mocha `#A3785E` accents) paired with clean, solid white card layouts (`#FFFFFF`).
+* **Multi-Page Navigation**: Fully integrated routing across Homepage, About Us, Menu & Services, Enquiry, and Contact pages.
+
+---
+
+## Timeline and Milestones
+- [x] **Milestone 1: Project Initiation & Planning** — Completed August 2026
+- [x] **Milestone 2: Part 1 Submission** — Completed August 2026
+- [x] **Milestone 3: Part 2 Development** — Completed September 2026
+- [ ] **Milestone 4: Part 3 Final Testing & Deployment** — Planned for October/November 2026
+
+---
+
+##  Part 1 Details
+*(Note: Part 3 details will follow in future submissions and edits.)*
+
+### Deliverables for this Phase
+* **HTML5 Semantic Skeleton**: Multi page site structure incorporating accessible forms, headers, navigation bars, and section tags.
+* **CSS3 Custom Styling**: Responsive layout built with CSS Variables, Flexbox, CSS Grid, custom overlays, and custom typography integrations.
+* **Formspree Integration**: Contact and enquiry form backend hooks configured for handling real time user input.
+
+### Setup & Local Execution Instructions
+1. Clone the repository:
+   ```bash
+   git clone (https://github.com/palesacodes-dev/TheMidnightChapter.git)

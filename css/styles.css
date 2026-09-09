@@ -1,0 +1,339 @@
+/* --- 1. FONTS & RESET --- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- VANILLA OAT LATTE PALETTE --- */
+:root {
+    --bg-dark: #F7F4EF;                 /* Warm vanilla cream base */
+    --bg-card: #FFFFFF;                 /* Bright white cards */
+    --bg-card-hover: #F2ECE4;           /* Warm oat hover tint */
+    --accent-rose: #A3785E;             /* Rich warm mocha/caramel */
+    --accent-glow: rgba(163, 120, 94, 0.12); /* Subtle warm lighting */
+    --text-primary: #2B2521;            /* Dark espresso text (easy to read) */
+    --text-muted: #6E655F;              /* Muted warm grey text */
+    --border-glass: rgba(163, 120, 94, 0.18); /* Soft aesthetic border */
+}
+
+/* --- 2. ATMOSPHERIC BACKGROUND --- */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+    padding: 2rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* --- 3. FROSTED NAVIGATION BAR --- */
+header {
+    position: sticky;
+    top: 1.5rem;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    margin-bottom: 3.5rem;
+    border: 1px solid var(--border-glass);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 1.4rem;
+    color: var(--accent-rose);
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav a:hover {
+    color: var(--accent-rose);
+    background: var(--accent-glow);
+}
+
+/* --- 4. HERO SECTION --- */
+.hero {
+    position: relative;
+    background-image: linear-gradient(rgba(20, 18, 16, 0.55), rgba(20, 18, 16, 0.55)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem 2.5rem;
+    border-radius: 28px;
+    text-align: center;
+    margin-bottom: 4rem;
+    border: 1px solid var(--border-glass);
+    box-shadow: 0 15px 35px rgba(163, 120, 94, 0.08);
+    overflow: hidden;
+}
+
+/* Forces text inside hero to stand out sharply in white */
+.hero h1, 
+.hero p,
+.hero .badge {
+    color: #FFFFFF !important;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-glow);
+    border: 1px solid var(--border-glass);
+    color: var(--accent-rose);
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+    color: var(--text-primary);
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    max-width: 620px;
+    margin: 0 auto 2.5rem auto;
+}
+
+/* CALL-TO-ACTION BUTTON */
+.btn {
+    display: inline-block;
+    background: var(--accent-rose);
+    color: #FFFFFF !important;
+    padding: 1rem 2.4rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 25px rgba(163, 120, 94, 0.25);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(163, 120, 94, 0.35);
+}
+
+/* --- 5. CARDS GRID --- */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+article, .card {
+    background: var(--bg-card);
+    padding: 2.2rem;
+    border-radius: 24px;
+    border: 1px solid var(--border-glass);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+}
+
+article:hover, .card:hover {
+    transform: translateY(-6px);
+    background: var(--bg-card-hover);
+    border-color: var(--accent-rose);
+    box-shadow: 0 15px 30px rgba(163, 120, 94, 0.12);
+}
+
+.card h3 {
+    color: var(--accent-rose);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* --- 6. FORMS STYLING --- */
+.form-container {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid var(--border-glass);
+    max-width: 650px;
+    margin: 0 auto 4rem auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    background: #FDFBF8;
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--accent-rose);
+    background: #FFFFFF;
+    box-shadow: 0 0 12px var(--accent-glow);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"], input[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+/* --- 7. FOOTER --- */
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-glass);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr; }
+    nav { flex-direction: column; gap: 1rem; }
+    .hero h1 { font-size: 2.2rem; }
+}
+/* --- CARD IMAGE CONTAINER --- */
+.card-img-wrapper {
+    width: 100%;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+}
+
+/* --- FIT AND CROP IMAGES --- */
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* --- OPTIONAL SMOOTH HOVER ZOOM --- */
+.card:hover .card-img-wrapper img {
+    transform: scale(1.05);
+}
+.card-img-wrapper {
+    width: 100%;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* FORCED CARD IMAGE SIZING */
+.card img, 
+div img {
+    width: 100% !important;
+    max-height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+} 
+/* Responsive Breakpoints */
+
+/* Tablet View (Screens 768px and smaller) */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+}
+
+/* Mobile View (Screens 480px and smaller) */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* Stacks menu cards into a single column */
+    }
+    nav ul {
+        flex-direction: column; /* Stacks navigation links vertically */
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .card-img-wrapper {
+        height: 160px;
+    }
+}
