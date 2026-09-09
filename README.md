@@ -53,7 +53,7 @@
 ### Setup & Local Execution Instructions
 1. Clone the repository:
    ```bash
-   git clone (https://github.com/palesacodes-dev/TheMidnightChapter.git)
+   git clone https://github.com/palesacodes-dev/TheMidnightChapter.git
 
 ### Site Map
 
