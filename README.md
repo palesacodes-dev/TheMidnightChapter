@@ -42,10 +42,10 @@
 
 ---
 
-##  Part 1 Details
+##  Part 1 & Part 2 Details
 *(Note: Part 3 details will follow in future submissions and edits.)*
 
-### Deliverables for this Phase
+### Deliverables for Part 1 & Part 2
 * **HTML5 Semantic Skeleton**: Multi page site structure incorporating accessible forms, headers, navigation bars, and section tags.
 * **CSS3 Custom Styling**: Responsive layout built with CSS Variables, Flexbox, CSS Grid, custom overlays, and custom typography integrations.
 * **Formspree Integration**: Contact and enquiry form backend hooks configured for handling real time user input.
@@ -54,3 +54,33 @@
 1. Clone the repository:
    ```bash
    git clone (https://github.com/palesacodes-dev/TheMidnightChapter.git)
+
+### Site Map
+
+- **Home Page** (`index.html`)
+- **About Us** (`about.html`)
+- **Menu & Services** (`menu.html`)
+- **Enquiry / Contact** (`contact.html`)
+
+---
+
+### Changelog
+
+### Changelog
+
+#### [Part 1] - Initial Web Layout & Structure
+- Created multi page HTML5 semantic structure for The Midnight Chapter website.
+- Implemented basic CSS layout, styling, and navigation links.
+
+#### [Part 2] - Custom Styling & Formspree Integration
+- Refined responsive design using CSS Grid, Flexbox, and CSS Variables.
+- Integrated Formspree backend hooks for enquiry and contact form handling.
+- Finalized repository documentation with Sitemap, Changelog, and References.
+
+---
+
+### References
+
+- **MDN Web Docs**: HTML & CSS Developer Guides. Available at: https://developer.mozilla.org/
+- **W3Schools**: Web development tutorials and code examples. Available at: https://www.w3schools.com/
+- **Formspree Documentation**: Form integration setup. Available at: https://formspree.io/
