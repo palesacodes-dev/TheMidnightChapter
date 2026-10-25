@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry | The Midnight Chapter</title>
+    <meta name="description" content="Reserve a private study pod or inquire about student group discounts at The Midnight Chapter. Submit your booking details online today.">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
     <header>
         <nav>
             <h2>The Midnight Chapter</h2>
-            <ul>
+            <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+                &#9776;
+            </button>
+            <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Menu & Services</a></li>
@@ -22,22 +27,24 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" data-aos="fade-up">
             <div class="badge">Get In Touch</div>
             <h1>Study Pod Booking & General Enquiry</h1>
             <p>Submit an enquiry to reserve a private pod or ask about student group discounts.</p>
         </section>
 
-        <section class="form-container">
-            <form action="https://formspree.io/f/mjyvjvpw  " method="post">
+        <section class="form-container" data-aos="fade-up" data-aos-delay="100">
+            <form id="enquiryForm" action="https://formspree.io/f/mjyvjvpw" method="post" novalidate>
                 <div class="form-group">
                     <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Palesa Ngcobo" required>
+                    <input type="text" id="name" name="name" placeholder="Palesa Ngcobo">
+                    <span class="error-msg" id="nameError"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="student@example.ac.za" required>
+                    <input type="email" id="email" name="email" placeholder="student@example.ac.za">
+                    <span class="error-msg" id="emailError"></span>
                 </div>
 
                 <div class="form-group">
@@ -52,6 +59,7 @@
                 <div class="form-group">
                     <label for="message">Message / Booking Details:</label>
                     <textarea id="message" name="message" placeholder="Specify your desired date, branch, and time..."></textarea>
+                    <span class="error-msg" id="messageError"></span>
                 </div>
 
                 <button type="submit" class="btn">Submit Enquiry</button>
@@ -63,5 +71,14 @@
         <p>&copy; 2026 The Midnight Chapter 24/7 Book & Study Cafe. All rights reserved.</p>
     </footer>
 
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation speed (in milliseconds)
+        once: true     // Animates only once when scrolling down
+      });
+    </script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

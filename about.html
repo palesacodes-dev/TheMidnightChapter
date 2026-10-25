@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | The Midnight Chapter</title>
+    <meta name="description" content="Learn about The Midnight Chapter's mission to provide students and night owls in Nelspruit with safe, quiet, and well-equipped 24/7 study lounges.">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
     <header>
         <nav>
             <h2>The Midnight Chapter</h2>
-            <ul>
+            <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+            &#9776;
+        </button>
+        <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Menu & Services</a></li>
@@ -22,26 +27,26 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" data-aos="fade-up">
             <div class="badge">Our Story</div>
             <h1>About The Midnight Chapter</h1>
             <p>Solving the late night study crisis for university students, software developers, and researchers.</p>
         </section>
 
         <section class="grid">
-            <article class="card">
+            <article class="card" data-aos="fade-up">
                 <h3>Organisation History</h3>
                 <p>Opened in 2024, The Midnight Chapter was established to fix a common issue: the lack of safe, quiet, and reliable study spaces during late nights. What began as a single reading room has grown into a multi branch study lounge operating round the clock.</p>
             </article>
 
-            <article class="card">
+            <article class="card" data-aos="fade-up">
                 <h3>Mission & Vision</h3>
                 <p><strong>Mission:</strong> To provide a safe, quiet 24/7 environment combining individual study spaces, curated literature, and fresh coffee.</p>
                 <br>
                 <p><strong>Vision:</strong> To become the premier network of 24/7 study hubs for late night coders, researchers, and students.</p>
             </article>
 
-            <article class="card">
+            <article class="card" data-aos="fade-up">
                 <h3>On Site Security Measures</h3>
                 <p>To ensure total peace of mind during overnight sessions, all facilities feature keycard door locks, full time overnight security guards, and emergency desk communication lines.</p>
             </article>
@@ -52,5 +57,14 @@
         <p>&copy; 2026 The Midnight Chapter 24/7 Book & Study Cafe. All rights reserved.</p>
     </footer>
 
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation speed (in milliseconds)
+        once: true     // Animates only once when scrolling down
+      });
+    </script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

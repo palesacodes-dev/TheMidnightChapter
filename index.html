@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Midnight Chapter | 24/7 Book & Study Cafe</title>
+    <meta name="description" content="Welcome to The Midnight Chapter, RichardsBay's premier 24/7 book & study cafe. Enjoy high speed fiber Wi-Fi, artisanal espresso, and secure study spaces anytime.">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
 
     <header>
         <nav>
             <h2>The Midnight Chapter</h2>
-            <ul>
+            <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+            &#9776;
+        </button>
+        <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Menu & Services</a></li>
@@ -23,7 +29,7 @@
 
     <main>
         <!-- HERO SECTION WITH BUTTON & WHITE CARD BACKDROP -->
-        <section class="hero">
+        <section class="hero" data-aos="fade-up">
             <div class="badge">Open 24 / 7 / 365</div>
             <h1>Your Atmospheric Study Haven</h1>
             <p>Step into a space designed for focus. Uninterrupted solar power, high speed fiber internet, and artisanal coffee around the clock.</p>
@@ -31,19 +37,19 @@
         </section>
 
         <!-- 3-COLUMN FEATURE GRID -->
-        <h2 class="section-title">Why Students & Developers Love Us</h2>
+        <h2 class="section-title" data-aos="fade-up">Why Students & Developers Love Us</h2>
         <section class="grid">
-            <article class="card">
-                <h3>01. Solar Backup Power</h3>
+            <article class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Solar Backup Power</h3>
                 <p>Never lose your focus. Fully backed up by solar energy to keep Wi-Fi and power outlets live through any load shedding.</p>
             </article>
 
-            <article class="card">
+            <article class="card" data-aos="fade-up" data-aos-delay="200">
                 <h3>02. Soundproof Pods</h3>
                 <p>Ergonomic, isolated study pods designed to remove distractions and help you get deep work done effortlessly.</p>
             </article>
 
-            <article class="card">
+            <article class="card" data-aos="fade-up" data-aos-delay="300">
                 <h3>03. Night Owl Barista</h3>
                 <p>Freshly brewed artisanal coffee, warm teas, and late night pastries served continuously while you study.</p>
             </article>
@@ -54,5 +60,20 @@
         <p>&copy; 2026 The Midnight Chapter 24/7 Book & Study Cafe. All rights reserved.</p>
     </footer>
 
+    <!-- LIGHTBOX MODAL OVERLAY -->
+    <div id="lightboxModal" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); justify-content: center; align-items: center; cursor: pointer;">
+        <span style="position: absolute; top: 20px; right: 30px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+        <img id="lightboxImg" style="max-width: 90%; max-height: 85vh; object-fit: contain; border-radius: 8px; box-shadow: 0 5px 25px rgba(0,0,0,0.5);">
+    </div>
+
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation speed (in milliseconds)
+        once: true     // Animates only once when scrolling down
+      });
+    </script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

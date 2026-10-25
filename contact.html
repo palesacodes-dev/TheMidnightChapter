@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | The Midnight Chapter</title>
+    <title>Contact & Locations | The Midnight Chapter</title>
+    <meta name="description" content="Get in touch with The Midnight Chapter team or view operating hours and branch information for our 24/7 study lounges.">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- AOS Animations CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
     <header>
         <nav>
             <h2>The Midnight Chapter</h2>
-            <ul>
+            <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+                &#9776;
+            </button>
+            <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Menu & Services</a></li>
@@ -22,24 +28,27 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" data-aos="fade-up">
             <div class="badge">Find Us</div>
             <h1>Contact Us & Branch Locations</h1>
-            <p>Find contact details and locations for our study lounges below.</p>
+            <p>Visit our 24/7 study lounges or reach out directly to our management team.</p>
         </section>
 
+        <!-- BRANCH CARDS -->
         <section class="grid">
-            <article class="card">
-                <h3>Downtown Branch</h3>
-                <p><strong>Address:</strong> 124 Main Street, Downtown Central</p>
-                <p><strong>Emergency Desk:</strong> +27 11 555 0192</p>
+            <article class="card" data-aos="fade-up">
+                <h3>Downtown / Central Branch</h3>
+                <p><strong>Address:</strong> 124 Main Street, Central District</p>
+                <p><strong>Hours:</strong> Open 24/7 (365 Days)</p>
+                <p><strong>Phone:</strong> +27 13 555 0192</p>
                 <p><strong>Email:</strong> downtown@midnightchapter.co.za</p>
             </article>
 
-            <article class="card">
-                <h3>Campus Branch</h3>
-                <p><strong>Address:</strong> 45 University Way, Academic District</p>
-                <p><strong>Emergency Desk:</strong> +27 11 555 0198</p>
+            <article class="card" data-aos="fade-up">
+                <h3>Campus / Academic Branch</h3>
+                <p><strong>Address:</strong> 45 University Way, Academic Area</p>
+                <p><strong>Hours:</strong> Open 24/7 (365 Days)</p>
+                <p><strong>Phone:</strong> +27 13 555 0198</p>
                 <p><strong>Email:</strong> campus@midnightchapter.co.za</p>
             </article>
         </section>
@@ -48,6 +57,14 @@
     <footer>
         <p>&copy; 2026 The Midnight Chapter 24/7 Book & Study Cafe. All rights reserved.</p>
     </footer>
-
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation speed (in milliseconds)
+        once: true     // Animates only once when scrolling down
+      });
+    </script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

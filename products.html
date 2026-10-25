@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu & Services | The Midnight Chapter</title>
+    <meta name="description" content="Browse our 24/7 cafe menu and membership packages. Enjoy double espresso, fresh pastries, and flexible daily or monthly study pod passes.">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
 
     <header>
         <nav>
             <h2>The Midnight Chapter</h2>
-            <ul>
+            <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+            &#9776;
+        </button>
+        <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Menu & Services</a></li>
@@ -22,52 +28,98 @@
     </header>
 
     <main>
-        <section class="hero">
+        <div class="search-section" style="text-align: center; margin: 1rem auto; max-width: 500px; padding: 0 1rem;" data-aos="fade-up">
+            <input type="text" id="searchInput" placeholder="Search menu, passes, or study pods..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 30px; border: 1px solid rgba(198, 156, 109, 0.4); background-color: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.95rem; outline: none;">
+        </div>
+
+        <section class="hero" data-aos="fade-up">
             <div class="badge">Pricing & Options</div>
             <h1>Menu & Study Pass Pricing</h1>
             <p>Explore our flexible membership passes and 24/7 artisanal espresso offerings.</p>
         </section>
 
-        <h2 class="section-title">Study Space Passes</h2>
+        <!-- === STUDY SPACE PASSES === -->
+        <h2 class="section-title" data-aos="fade-up">Study Space Passes</h2>
         <section class="grid">
-            <article class="card">
+            <article class="card" data-aos="fade-up">
                 <div class="card-img-wrapper">
-                <img src="images/Studypod.jpg" alt="Daily Night Pass">
-</div>
+                    <img src="images/Studypod.jpg" alt="Daily Night Pass">
+                </div>
                 <h3>Daily Night Pass</h3>
                 <p><strong>R85 / day</strong></p>
-                <br>
-                <p>Access to open study desks from 18:00 to 06:00, solar power outlet access, and high speed fiber internet.</p>
+                <p style="margin-top: 0.5rem;">Access to open study desks from 18:00 to 06:00, solar power outlet access, and high speed fiber internet.</p>
             </article>
 
-            <article class="card">
+            <article class="card" data-aos="fade-up">
+                <div class="card-img-wrapper">
+                    <img src="images/Student Pass.jpg" alt="Monthly Student Pass">
+                </div>
                 <h3>Monthly Student Pass</h3>
                 <p><strong>R450 / month</strong></p>
-                <br>
-                <p>Unlimited 24/7 entry, keycard access, 10% cafe discount, and 2 private study pod reservation hours per week.</p>
+                <p style="margin-top: 0.5rem;">Unlimited 24/7 entry, keycard access, 10% cafe discount, and 2 private study pod reservation hours per week.</p>
             </article>
         </section>
-        <h2 class="section-title">24/7 Cafe Menu</h2>
-        <section class="grid">
-           <article class="card">
-            <div class="card-img-wrapper">
-                <img src="images/coffee.jpg" alt="Espresso Bar">
-            </div>
-            <h3>Espresso Bar</h3>
-            <p>Double Espresso – <strong>R28</strong></p>
-            <p>Cappuccino / Flat White – <strong>R36</strong></p>
-            <p>Midnight Cold Brew – <strong>R42</strong></p>
-        </article>
 
-        <article class="card">
-            <div class="card-img-wrapper">
-                <img src="images/pastry.jpg" alt="Fresh Pastries">
-            </div>
-            <h3>Fresh Pastries & Snacks</h3>
-            <p>Fresh Butter Croissant – <strong>R30</strong></p>
-            <p>Toasted Panini – <strong>R48</strong></p>
-            <p>Protein Energy Bar – <strong>R25</strong></p>
-        </article>
+        <!-- === ESPRESSO BAR === -->
+        <h2 class="section-title" data-aos="fade-up">Espresso Bar</h2>
+        <section class="grid">
+            <article class="card" data-aos="fade-up">
+                <div class="card-img-wrapper">
+                    <img src="images/coffee.jpg" alt="Double Espresso">
+                </div>
+                <h3>Double Espresso</h3>
+                <p>Rich, bold, and concentrated double shot of our signature house blend.</p>
+                <p style="margin-top: 0.5rem;"><strong>R28</strong></p>
+            </article>
+
+            <article class="card" data-aos="fade-up">
+                <div class="card-img-wrapper">
+                    <img src="images/Cappuccino flat white.jpg" alt="Cappuccino / Flat White">
+                </div>
+                <h3>Cappuccino / Flat White</h3>
+                <p>Silky steamed milk poured expertly over a dark roast espresso base.</p>
+                <p style="margin-top: 0.5rem;"><strong>R36</strong></p>
+            </article>
+
+            <article class="card" data-aos="fade-up" data-keywords="espresso dark roast coffee brew midnight">
+                <div class="card-img-wrapper">
+                    <img src="images/Midnight Cold Brew.jpg" alt="Midnight Cold Brew">
+                </div>
+                <h3>Midnight Cold Brew</h3>
+                <p>Our signature dark roast espresso blend crafted for night owls.</p>
+                <p style="margin-top: 0.5rem;"><strong>R42</strong></p>
+            </article>
+        </section>
+
+        <!-- === FRESH PASTRIES & SNACKS === -->
+        <h2 class="section-title" data-aos="fade-up">Fresh Pastries & Snacks</h2>
+        <section class="grid">
+            <article class="card" data-aos="fade-up" data-keywords="fresh pastries pastry snack baked croissant food">
+                <div class="card-img-wrapper">
+                    <img src="images/pastry.jpg" alt="Fresh Butter Croissant">
+                </div>
+                <h3>Fresh Butter Croissant</h3>
+                <p>Golden, flaky, and freshly baked every single morning.</p>
+                <p style="margin-top: 0.5rem;"><strong>R30</strong></p>
+            </article>
+
+            <article class="card" data-aos="fade-up" data-keywords="fresh pastries pastry snack baked croissant food">
+                <div class="card-img-wrapper">
+                    <img src="images/Toasted Panini.jpg" alt="Toasted Panini">
+                </div>
+                <h3>Toasted Panini</h3>
+                <p>Warm pressed sourdough sandwich with gourmet savory fillings.</p>
+                <p style="margin-top: 0.5rem;"><strong>R48</strong></p>
+            </article>
+
+            <article class="card" data-aos="fade-up" data-keywords="fresh pastries pastry snack baked croissant food">
+                <div class="card-img-wrapper">
+                    <img src="images/Protein Energy Bar.jpg" alt="Protein Energy Bar">
+                </div>
+                <h3>Protein Energy Bar</h3>
+                <p>Nutritious oats, honey, and dark chocolate to fuel late night study sessions.</p>
+                <p style="margin-top: 0.5rem;"><strong>R25</strong></p>
+            </article>
         </section>
     </main>
 
@@ -75,5 +127,20 @@
         <p>&copy; 2026 The Midnight Chapter 24/7 Book & Study Cafe. All rights reserved.</p>
     </footer>
 
+    <!-- LIGHTBOX MODAL OVERLAY -->
+    <div id="lightboxModal" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); justify-content: center; align-items: center; cursor: pointer;">
+        <span style="position: absolute; top: 20px; right: 30px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+        <img id="lightboxImg" style="max-width: 90%; max-height: 85vh; object-fit: contain; border-radius: 8px; box-shadow: 0 5px 25px rgba(0,0,0,0.5);">
+    </div>
+
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation speed (in milliseconds)
+        once: true     // Animates only once when scrolling down
+      });
+    </script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

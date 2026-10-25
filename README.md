@@ -1,86 +1,103 @@
-# The Midnight Chapter 24/7 Book & Study Cafe
+# The Midnight Chapter — 24/7 Book & Study Cafe
 
 > An atmospheric, responsive web application for a 24/7 study cafe and artisanal coffee shop tailored for students, developers, and late night focus sessions.
 
 ---
 
 ## Student Information
-* **Student Name**: Palesa S'phesihle Ngcobo
-* **Student Number**: ST10104545
-* **Institution**: Rosebank International, Mbombela Campus
-* **Course/Module**: Diploma in Information Technology in Software Development
-* **Submission Date**: 18 September 2026
+- **Student Name**: Palesa S'phesihle Ngcobo
+- **Student Number**: ST10104545
+- **Institution**: IIE Rosebank International, Mbombela Campus
+- **Course/Module**: Diploma in Information Technology in Software Development
+- **Submission Date**: November 2026
 
 ---
 
 ## Project Overview
-"The Midnight Chapter" is a digital front end web application created to address the growing demand among university students and software developers for structured, quiet, and reliable late night study spaces. Operating on a 24/7 model with uninterrupted solar backup power and high speed fiber internet, the platform allows users to explore the study space, browse menu offerings, check pod availability, and submit pod reservation inquiries seamlessly.
+"The Midnight Chapter" is a digital front-end web application created to address the growing demand among university students and software developers for structured, quiet, and reliable late night study spaces. Operating on a 24/7 model with high speed fiber internet, the platform allows users to explore the study space, browse menu offerings with real time search filtering, view high resolution imagery via an interactive lightbox gallery, and submit online pod reservation enquiries seamlessly.
 
 ---
 
-##  Website Goals and Objectives
-* **Primary Goal**: To provide an intuitive, high end digital hub where students and developers can explore services, review cafe offerings, and reserve study pods online.
-* **Objective 1**: Deliver a fully responsive, mobile first user interface using CSS Grid and Flexbox that adapts across desktop, tablet, and mobile screens.
-* **Objective 2**: Implement an interactive, functional enquiry system integrated with the Formspree API for real time pod reservations.
-* **Objective 3**: Maintain visual identity standards with high contrast luxury typography (*Playfair Display* and *Plus Jakarta Sans*) and high legibility UI components.
+## Website Goals and Objectives
+- **Primary Goal**: To provide an intuitive, high end digital hub where students and developers can explore services, review cafe offerings, and reserve study pods online.
+- **Objective 1**: Deliver a fully responsive, mobile first user interface using CSS Grid and Flexbox that adapts across desktop, tablet, and mobile screens, complete with a collapsible hamburger navigation menu.
+- **Objective 2**: Implement an interactive, functional search system with keyword data attributes and a client side validated enquiry form integrated with the Formspree API.
+- **Objective 3**: Maintain visual identity standards with high contrast luxury typography and clean UI components optimized for performance and accessibility.
 
 ---
 
 ## Key Features and Functionality
-* **Atmospheric Hero Banner**: Features a dark tinted overlay over luxury marble interior imagery with crisp, readable white typography.
-* **Interactive Pod Enquiry Form**: Integrated enquiry section utilizing Formspree API for direct study pod booking submissions.
-* **Vanilla Oat Latte Design System**: Custom cohesive color scheme (`#F7F4EF` base with mocha `#A3785E` accents) paired with clean, solid white card layouts (`#FFFFFF`).
-* **Multi-Page Navigation**: Fully integrated routing across Homepage, About Us, Menu & Services, Enquiry, and Contact pages.
+- **Atmospheric Hero Banner**: Dark tinted overlay over luxury interior imagery with crisp, readable white typography.
+- **Live Search & Keyword Filtering**: Real time JavaScript search bar on the Menu & Services page filtering products, coffee blends, and snacks dynamically.
+- **Interactive Lightbox Modal**: Clicking any product or study card image opens an uncropped, high resolution modal overlay with seamless click to close functionality.
+- **Validated Enquiry Form**: Client side JavaScript form validation with regular expression (Regex) pattern checking and error messaging connected directly to Formspree.
+- **Search Engine Optimization (SEO) & Tech Files**: Fully implemented SEO title tags, meta descriptions, open `robots.txt`, and structured `sitemap.xml`.
 
 ---
 
 ## Timeline and Milestones
-- [x] **Milestone 1: Project Initiation & Planning** — Completed August 2026
-- [x] **Milestone 2: Part 1 Submission** — Completed August 2026
-- [x] **Milestone 3: Part 2 Development** — Completed September 2026
-- [ ] **Milestone 4: Part 3 Final Testing & Deployment** — Planned for October/November 2026
+- [x] **Milestone 1: Project Initiation & Planning** - Completed August 2026
+- [x] **Milestone 2: Part 1 Submission** - Completed August 2026
+- [x] **Milestone 3: Part 2 Development** - Completed September 2026
+- [x] **Milestone 4: Part 3 Final Testing, Interactivity & Deployment** - Completed November 2026
 
 ---
 
-##  Part 1 & Part 2 Details
-*(Note: Part 3 details will follow in future submissions and edits.)*
+## Deliverables & Technical Stack
 
-### Deliverables for Part 1 & Part 2
-* **HTML5 Semantic Skeleton**: Multi page site structure incorporating accessible forms, headers, navigation bars, and section tags.
-* **CSS3 Custom Styling**: Responsive layout built with CSS Variables, Flexbox, CSS Grid, custom overlays, and custom typography integrations.
-* **Formspree Integration**: Contact and enquiry form backend hooks configured for handling real time user input.
+### Technologies Used
+- **HTML5**: Semantic layout structure (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+- **CSS3**: Custom styling utilizing CSS Variables, Flexbox, CSS Grid, custom overlays, and media queries for mobile responsiveness.
+- **JavaScript (ES6)**: DOM manipulation, event handling, real time search filtering algorithms, modal management, and form validation.
+- **Formspree API**: External service integration for handling form submissions directly to email.
 
 ### Setup & Local Execution Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/palesacodes-dev/TheMidnightChapter.git
+   git clone [https://github.com/palesacodes-dev/TheMidnightChapter.git](https://github.com/palesacodes-dev/TheMidnightChapter.git)
 
-### Site Map
+   Live Demo & Site Map
+Live Website: https://palesacodes-dev.github.io/TheMidnightChapter/
 
-- **Home Page** (`index.html`)
-- **About Us** (`about.html`)
-- **Menu & Services** (`menu.html`)
-- **Enquiry / Contact** (`contact.html`)
+GitHub Repository: https://github.com/palesacodes-dev/TheMidnightChapter
 
----
+Home Page (index.html)
 
-### Changelog
+About Us (about.html)
 
-### Changelog
+Menu & Services (products.html)
 
-#### [Part 1] - Initial Web Layout & Structure
-- Created multi page HTML5 semantic structure for The Midnight Chapter website.
-- Implemented basic CSS layout, styling, and navigation links.
+Enquiry Form (enquiry.html)
 
-#### [Part 2] - Custom Styling & Formspree Integration
-- Refined responsive design using CSS Grid, Flexbox, and CSS Variables.
-- Integrated Formspree backend hooks for enquiry and contact form handling.
-- Finalized repository documentation with Sitemap, Changelog, and References.
+Contact & Locations (contact.html)
 
----
+Technical Files (robots.txt, sitemap.xml)
 
-### References
+Changelog
+[Part 1] - Initial Web Layout & Structure
+Created multi page HTML5 semantic structure for The Midnight Chapter website.
 
-- **MDN Web Docs**: HTML & CSS Developer Guides. Available at: https://developer.mozilla.org/
-- **W3Schools**: Web development tutorials and code examples. Available at: https://www.w3schools.com/
-- **Formspree Documentation**: Form integration setup. Available at: https://formspree.io/
+Implemented basic CSS layout, styling, and navigation links.
+
+[Part 2] - Custom Styling & Formspree Integration
+Refined responsive design using CSS Grid, Flexbox, and CSS Variables.
+
+Integrated Formspree backend hooks for enquiry and contact form handling.
+
+[Part 3] - Advanced Interactivity, Validation & SEO
+Added dynamic JavaScript real time search filtering with keyword mapping.
+
+Implemented an interactive lightbox image viewer modal.
+
+Configured robust client side form validation using JavaScript and Regular Expressions (Regex).
+
+Implemented SEO meta tags, robots.txt, and XML sitemap for search engine indexing.
+
+Successfully deployed the final web application to GitHub Pages.
+
+**References**
+MDN Web Docs: HTML, CSS, and JavaScript Developer Guides. Available at: https://developer.mozilla.org/
+
+W3Schools: Web development tutorials and code examples. Available at: https://www.w3schools.com/
+
+Formspree Documentation: Form integration setup. Available at: https://formspree.io/
