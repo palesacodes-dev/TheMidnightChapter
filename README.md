@@ -122,7 +122,7 @@ Implemented SEO meta tags, robots.txt, and XML sitemap for search engine indexin
 
 Successfully deployed the final web application to GitHub Pages.
 
-**References**
+## References
 MDN Web Docs: HTML, CSS, and JavaScript Developer Guides. Available at: https://developer.mozilla.org/
 
 W3Schools: Web development tutorials and code examples. Available at: https://www.w3schools.com/
