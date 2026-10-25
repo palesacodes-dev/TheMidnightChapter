@@ -9,7 +9,7 @@
 - **Student Number**: ST10104545
 - **Institution**: IIE Rosebank International, Mbombela Campus
 - **Course/Module**: Diploma in Information Technology in Software Development
-- **Submission Date**: November 2026
+- **Submission Date**: 02 November 2026
 
 ---
 
@@ -36,10 +36,10 @@
 ---
 
 ## Timeline and Milestones
-- [x] **Milestone 1: Project Initiation & Planning** - Completed August 2026
-- [x] **Milestone 2: Part 1 Submission** - Completed August 2026
-- [x] **Milestone 3: Part 2 Development** - Completed September 2026
-- [x] **Milestone 4: Part 3 Final Testing, Interactivity & Deployment** - Completed November 2026
+- [x] **Milestone 1: Project Initiation & Planning** Completed August 2026
+- [x] **Milestone 2: Part 1 Submission** Completed August 2026
+- [x] **Milestone 3: Part 2 Development** Completed September 2026
+- [x] **Milestone 4: Part 3 Final Testing, Interactivity & Deployment** Completed November 2026
 
 ---
 
@@ -51,40 +51,67 @@
 - **JavaScript (ES6)**: DOM manipulation, event handling, real time search filtering algorithms, modal management, and form validation.
 - **Formspree API**: External service integration for handling form submissions directly to email.
 
-### Setup & Local Execution Instructions
+---
+
+## Project Structure
+TheMidnightChapter/
+│
+├── index.html         # Home page with feature highlights
+├── about.html         # Organization history, mission, and security details
+├── products.html      # Study passes, espresso bar menu, and smart search
+├── enquiry.html       # Study pod booking form with validation
+├── contact.html       # Branch locations and contact information
+├── robots.txt         # Search engine indexing configuration
+├── sitemap.xml        # Site structure map for web crawlers
+│
+├── css/
+│   └── styles.css     # Global stylesheet, custom variables & media queries
+│
+├── js/
+│   └── script.js      # Main JavaScript functionality, search logic & modal UI
+│
+└── images/            # Cafe, product, and study pod image assets
+
+---
+
+## Setup & Local Execution Instructions
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/palesacodes-dev/TheMidnightChapter.git](https://github.com/palesacodes-dev/TheMidnightChapter.git)
+   git clone https://github.com/palesacodes-dev/TheMidnightChapter.git
 
-   Live Demo & Site Map
+## Live Demo & Site Map
 Live Website: https://palesacodes-dev.github.io/TheMidnightChapter/
 
 GitHub Repository: https://github.com/palesacodes-dev/TheMidnightChapter
 
-Home Page (index.html)
+## Page Directory
+Home Page: index.html
 
-About Us (about.html)
+About Us: about.html
 
-Menu & Services (products.html)
+Menu & Services: products.html
 
-Enquiry Form (enquiry.html)
+Enquiry Form: enquiry.html
 
-Contact & Locations (contact.html)
+Contact & Locations: contact.html
 
-Technical Files (robots.txt, sitemap.xml)
+Technical Files: robots.txt, sitemap.xml
 
-Changelog
+## Changelog
 [Part 1] - Initial Web Layout & Structure
+
 Created multi page HTML5 semantic structure for The Midnight Chapter website.
 
 Implemented basic CSS layout, styling, and navigation links.
 
 [Part 2] - Custom Styling & Formspree Integration
+
 Refined responsive design using CSS Grid, Flexbox, and CSS Variables.
 
 Integrated Formspree backend hooks for enquiry and contact form handling.
 
 [Part 3] - Advanced Interactivity, Validation & SEO
+
 Added dynamic JavaScript real time search filtering with keyword mapping.
 
 Implemented an interactive lightbox image viewer modal.
