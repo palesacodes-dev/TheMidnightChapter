@@ -1,4 +1,4 @@
-# The Midnight Chapter — 24/7 Book & Study Cafe
+# The Midnight Chapter-24/7 Book & Study Cafe
 
 > An atmospheric, responsive web application for a 24/7 study cafe and artisanal coffee shop tailored for students, developers, and late night focus sessions.
 
