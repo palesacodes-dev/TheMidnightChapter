@@ -34,10 +34,10 @@
         </section>
 
         <section class="form-container" data-aos="fade-up" data-aos-delay="100">
-            <form id="enquiryForm" action="https://formspree.io/f/mjyvjvpw" method="post" novalidate>
+            <form id="enquiryForm" action="https://formspree.io/f/mjyvjvpw" method="post">
                 <div class="form-group">
                     <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Palesa Ngcobo">
+                    <input type="text" id="name" name="name" placeholder="Palesa Ngcobo" pattern="[A-Za-z\s]+" title="Please enter letters only" required>
                     <span class="error-msg" id="nameError"></span>
                 </div>
 
